@@ -10,7 +10,7 @@
 - Any solution returned  by the framework, are guaranteed to be feasible
 - Hyperparameter optimization for ML models, is formulized as a bilevel optimization problem and can by solved within the DOMINO framework
   
-<img width="4559" height="2850" alt="figure3" src="https://github.com/user-attachments/assets/3af42d4f-cc4c-40df-b8f1-0752953fb392" />
+<img width="4559" height="2850" alt="figure3" src="https://github.com/user-attachments/assets/ad7a24a4-07b2-4a90-aa18-26905a5084cf" />
 
 ## Repository Structure
 
