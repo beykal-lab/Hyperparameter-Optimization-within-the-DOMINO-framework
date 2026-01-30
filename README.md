@@ -36,7 +36,7 @@ $$
 - nlopt
 - scikit-learn (sklearn)
 
-## Script Explanation
+## Data and Script Explanation
 
 - Data: In this case study, we analyze the separation of ethanol and water via extractive distillation using mono-ethylene glycol solvent. The process considers two columns connected in series where the solvent and the azeotropic mixture of ethanol and water are co-fed to the first column to recover ethanol, and the bottom product is then fed to the second column to recover and recycle the monoethylene glycol solvent. The details of the process design, the Aspen Plus model, and the exact entry points of the streams to columns can be found in <sup>[2](ghalavand2021heat)</sup>. We collect 2500 random samples within the operational range of the process variables shown in Table from the Aspen Plus simulation.  
 
