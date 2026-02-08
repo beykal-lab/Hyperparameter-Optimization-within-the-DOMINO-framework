@@ -43,10 +43,10 @@ $$
 
 | Process Variable | Range |
 |------------------|-------|
-| Temperature (°C) (S-101) | 30 - 60 |
-| Ethanol wt% (S-100) | 80 - 93 |
-| Reflux ratio (T-1) | 0.3 - 0.5 |
-| Reflux ratio (T-2) | 0.3 - 0.5 |
+| Temperature (°C) | 30 - 60 |
+| Ethanol wt%  | 80 - 93 |
+| Reflux ratio  | 0.3 - 0.5 |
+| Reflux ratio | 0.3 - 0.5 |
 - The dataset is first standardized to a mean of zero and standard deviation of 1, and 70\% is randomly split for training-validation set with the remaining 30\% as testing set for model evaluation.
 - A fourth-degree polynomial serves as the regression model for this learning problem.   Model training uses ridge regression with 5-fold cross-validation to minimize the penalized residual sum of squares loss function. The penalty weight, $\lambda$, is a model hyperparameter that will be optimized using the suggested methodology.
 - For this example, the DIRECT <sup>[3](DIRECT)</sup>, from nlopt library <sup>[4](nlopt)</sup> algorithm is used within the DOMINO framework to tune the model 
