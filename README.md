@@ -7,7 +7,6 @@
 - **D**ata-driven **O**ptimization of bilevel **M**ixed-**I**nteger **NO**n-linear problems <sup>[1](DOMINO)<sup>
 - This framework approximates the bilevel optimization problem as a single level task and solves it using data-driven optimization algorithms
 - Because of the flexibility of the framework, a wide range of data-driven algorithms can be integerated to the framework
-- Any solution returned  by the framework, are guaranteed to be feasible
 - Hyperparameter optimization for ML models (with cross-validation reaining), is formulized as a bilevel optimization problem and can by solved within the DOMINO framework
 - An example of bilevel formulation for hyperparameter optimization of a ridge-regularized regression model with cross-validation training:
 
@@ -21,7 +20,7 @@ $$
 $$
 
   
-<img width="4559" height="2850" alt="figure3" src="https://github.com/user-attachments/assets/ad7a24a4-07b2-4a90-aa18-26905a5084cf" />
+
 
 ## Repository Structure
 
@@ -38,9 +37,9 @@ $$
 
 ## Data and Script Explanation
 
-- Data: In this case study, we analyze the separation of ethanol and water via extractive distillation using mono-ethylene glycol solvent. The process considers two columns connected in series where the solvent and the azeotropic mixture of ethanol and water are co-fed to the first column to recover ethanol, and the bottom product is then fed to the second column to recover and recycle the monoethylene glycol solvent. The details of the process design, the Aspen Plus model, and the exact entry points of the streams to columns can be found in <sup>[2](ghalavand2021heat)</sup>. We collect 2500 random samples within the operational range of the process variables shown in Table from the Aspen Plus simulation.  
+- Data: In this case study, We examine the separation of ethanol and water by extractive distillation using monoethylene glycol as the solvent. The procedure involves two columns arranged in series: the solvent and an azeotropic mixture of ethanol and water are simultaneously introduced into the first column to extract ethanol, and the bottom product is subsequently directed to the second column to recover and recycle the monoethylene glycol solvent. The specifics of the process design, the Aspen Plus model, and the precise entry locations of the streams to the columns are available in <sup>[2](ghalavand2021heat)</sup>. We gather 2,500 random samples within the operational range of the process variables defined in the table from the Aspen Plus simulation.  
 
-### Table: Features of the regression model for the extractive distillation process
+### Table: Features of used as variables in the regression model for this case study
 
 | Process Variable | Range |
 |------------------|-------|
@@ -48,8 +47,8 @@ $$
 | Ethanol wt% (S-100) | 80 - 93 |
 | Reflux ratio (T-1) | 0.3 - 0.5 |
 | Reflux ratio (T-2) | 0.3 - 0.5 |
-- The dataset is first standardized to a mean of zero and standard deviation of 1, and randomly split into 70\% training-validation set and 30\% testing set for model evaluation.
-- A fourth-degree polynomial is trained as the representative regression model for this learning task. Model training is performed using ridge regression with 5-fold CV by minimizing the penalized residual sum of squares loss function. The weight of the penalization is the model hyperparameter, $\lambda$, which will be tuned with the proposed framework.
+- The dataset is first standardized to a mean of zero and standard deviation of 1, and 70\% is randomly split for training-validation set with the remaining 30\% as testing set for model evaluation.
+- A fourth-degree polynomial serves as the regression model for this learning problem.   Model training uses ridge regression with 5-fold cross-validation to minimize the penalized residual sum of squares loss function. The penalty weight, $\lambda$, is a model hyperparameter that will be optimized using the suggested methodology.
 - For this example, the DIRECT <sup>[3](DIRECT)</sup>, from nlopt library <sup>[4](nlopt)</sup> algorithm is used within the DOMINO framework to tune the model 
 
 ## Citation
