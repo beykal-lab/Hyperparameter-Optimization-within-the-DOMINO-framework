@@ -37,7 +37,7 @@ $$
 
 ## Data and Script Explanation
 
-- Data: In this case study, We examine the separation of ethanol and water by extractive distillation using monoethylene glycol as the solvent. The procedure involves two columns arranged in series: the solvent and an azeotropic mixture of ethanol and water are simultaneously introduced into the first column to extract ethanol, and the bottom product is subsequently directed to the second column to recover and recycle the monoethylene glycol solvent. The specifics of the process design, the Aspen Plus model, and the precise entry locations of the streams to the columns are available in <sup>[2](ghalavand2021heat)</sup>. We gather 2,500 random samples within the operational range of the process variables defined in the table from the Aspen Plus simulation.  
+- Data: In this case study, we examine the separation of ethanol and water by extractive distillation using monoethylene glycol as the solvent. The process involves two columns arranged in series: the solvent and an azeotropic mixture of ethanol and water are simultaneously introduced into the first column to extract ethanol, and the bottom product is subsequently directed to the second column to recover and recycle the monoethylene glycol solvent. The specifics of the process design, the Aspen Plus model, and the precise entry locations of the streams to the columns are available in <sup>[2](ghalavand2021heat)</sup>. We gather 2,500 random samples within the operational range of the process variables defined in the table from the Aspen Plus simulation.  
 
 ### Table: Features of used as variables in the regression model for this case study
 
