@@ -1,5 +1,7 @@
 # Hyperparameter Optimization for Nonlinear Machine Learning Models with the DOMINO Framework 
 
+<a href="https://doi.org/10.5281/zenodo.19545896"><img src="https://zenodo.org/badge/1177286502.svg" alt="DOI"></a>
+
 ## Overview
 
 ### The DOMINO Framework
