@@ -1,4 +1,4 @@
-# Hyperparameter Optimization for Non-linear Machine Learning Models Within the DOMINO Framework 
+# Hyperparameter Optimization for Nonlinear Machine Learning Models With the DOMINO Framework 
 
 ## Overview
 
